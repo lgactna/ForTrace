@@ -1,4 +1,6 @@
-Repository of ForTrace framework as submitted to IFIP ICDF 11.9 2020
+The **ForTrace** framework was published at the Digital Forensics Research Workshop '22 (EU). The article can be freely downloaded from [Digital Investigation](https://www.sciencedirect.com/science/article/pii/S2666281722000130).
+
+The reference to this article is: Thomas Göbel, Stephan Maltan, Jan Türr, Harald Baier, and Florian Mann. "ForTrace - A holistic forensic data set synthesis framework". In: Forensic Science International: Digital Investigation, 40 (2022).
 
 # What is ForTrace
 ForTrace is a tool that aims towards the automatic generation of traffic through multiple applications. Supported applications
@@ -22,6 +24,9 @@ For info there are different starting symbols describing different actions:
 - \[X] means: There have been errors and the program has been terminated.
 
 ## Where do I find the documentation?
+
+**Important - The Sphinx documentation is currently being updated to reflect recent changes and additions to the framework and will be updated here as the next version of ForTrace is made public. For immediate information, we recommend the wiki or contacting the authors.**
+
 Ready compiled html version of the documentation can be found in ```docs/build```. The [wiki](https://github.com/dasec/fortrace/wiki) attached to this repository also contains all information needed to install and run ForTrace and will be updated and maintained alongside the Sphinx documentation.
 
 The documentation can be found in ```docs/src/```. As the folder name suggests this only contains the source 
@@ -109,6 +114,8 @@ reason the auto login does not work with your Windows 10 guest component,
 [this link](https://support.microsoft.com/en-us/help/324737/how-to-turn-on-automatic-logon-in-windows) should guide you
 through the process of (re-)enabling auto login.
 
+**Note** - Windows 11 guests can be installed using the same method, with a specific installation script **win11install.sh** being provided with the next update in the same folder as the Windows 10 script.
+
 ### Windows installation - automated
 
 While most of the installation of the Windows guest can be automated, a few steps have to be done manually.
@@ -125,8 +132,7 @@ located in the same folder.
 The first step in creating your virtual Ubuntu guest is creating the virtual machine. To do this, you will need to
 obtain a Ubuntu image. We recommend downloading an ISO-file from an official source.
 
-Although we recommend Ubuntu 19.10, you can use other versions as well - the installation process *should* remain
-the same.
+**Important - The installation script may still be named after Ubuntu version 19.10, but is compatible with the newest Ubuntu version (22.04 LTS). The rest of the installation is largely compatible with Ubuntu but currently in the process of being tested.**
 
 Next, you need to set up the virtual machine.
 While this can be done via the graphical interface of the **virt-manager**, we recommend running the **ubuntu19.10install.sh**
@@ -188,6 +194,5 @@ necessary python modules.
 
 
 A more in-depth explanation of the installation can be found [here](https://github.com/dasec/fortrace/wiki).
-
 
 
